@@ -7,7 +7,6 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } f
 import { Upload, Camera, AlertTriangle, Lightbulb, TrendingUp, Droplets, Moon, Sun, X, Clock, ThermometerSun, Wind, Eye, Leaf, Sprout, Shield } from 'lucide-react';
 import { ImageWithFallback } from './components/figma/ImageWithFallback';
 
-// Mock ML model response
 const mockAnalysisResults = {
   disease: "Late Blight",
   confidence: 87,
