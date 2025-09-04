@@ -658,8 +658,8 @@ export default function App() {
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-start mb-8">
           <div className="text-center flex-1">
-            <h1 className="mb-4">Potato Disease Analysis System</h1>
-            <p className="text-muted-foreground">Upload a potato image for AI-powered disease detection and treatment recommendations</p>
+            <h1 className="mb-6">TuberShield<br />The Potato Disease Analyser</h1>
+            <p className="text-muted-foreground">ML-powered potato disease detection and treatment recommendations</p>
           </div>
           <Button
             variant="outline"
@@ -684,7 +684,7 @@ export default function App() {
                   <Upload className="h-12 w-12 mx-auto mb-4 text-muted-foreground" />
                   <h3 className="mb-2">Upload Potato Image</h3>
                   <p className="text-sm text-muted-foreground mb-4">
-                    Drag and drop your potato image here or click to browse
+                    Click to browse local files, or drag and drop your potato image
                   </p>
                   <Button>
                     <Camera className="h-4 w-4 mr-2" />
@@ -780,16 +780,15 @@ export default function App() {
             {/* Center Column - Image */}
             <div className="flex flex-col items-center">
               <Card className="w-full max-w-md">
-                <CardContent className="p-4">
-                  <div className="aspect-square relative overflow-hidden rounded-lg bg-muted">
-                    <img
-                      src={uploadedImage}
-                      alt="Uploaded potato"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
+                <CardContent className="p-4 flex justify-center">
+                  <img
+                    src={uploadedImage}
+                    alt="Uploaded potato"
+                    className="max-w-[200px] max-h-[200px] object-contain rounded-md"
+                  />
                 </CardContent>
               </Card>
+
               
               <Button 
                 variant="outline" 
