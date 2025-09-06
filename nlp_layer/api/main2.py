@@ -4,7 +4,7 @@ import os
 
 app = FastAPI()
 
-BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+BASE_DIR = os.path.dirname(os.path.dirname(__file__)) 
 DATA_FILE = os.path.join(BASE_DIR, "data", "processed.jsonl")
 
 # Load data once at startup
